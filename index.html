@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+http://www.justinaguilar.com/animations/index.html#download
+-->
+
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "css/animations.css" tye="text/css">
+        <Script src = "http://code.jquery.com/jquery-1.10.1.min.js"> </script><!-- biblioteca jquery -->
+    </head>
+    <style>
+        #brazuca{
+            width:100px; height:100px;
+            background-image:url('img/brazuca.jpg');
+            visibility: hidden; 
+            margin: 0auto;
+            position:absolute;
+            top:100px;
+            left:50%;
+            z-index:1;
+        }
+        section{
+            background-color:white;
+            height:500px;
+            position:relative;
+        }
+        body{
+            background-color: #b02568;
+        }
+    </style>
+    <body>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section>
+        <div id="brazuca"></div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <Script>
+	$ (Window) .scroll (function () {
+		$ ('#brazuca') .each (function () {
+		var imagePos = $ (this) .offset () superior.;
+
+		var topOfWindow = $ (window) .scrollTop ();
+			if (imagePos <topOfWindow + 200 ) {
+				$(This).addClass ("slideExpandUp");
+			}
+		});
+	});
+        </Script>
+    </body>
+
