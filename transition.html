@@ -9,21 +9,24 @@
             div {
                 width: 100px;
                 height: 100px;
-                background: red;
-                -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* For Safari 3.1 to 6.0 */
-                transition: width 2s, height 2s, transform 2s;
+                background: blue;
+                color:#2f84ea;
+               /*<!-- compatibilidade com o navegador -webkit-transition: width 2s, height 2s, -webkit-transform 2s;  For Safari 3.1 to 6.0  -->*/
+                transition: width 2s, height 2s, transform 3s, color 2s; <! -- quando passar o mouse por cima--> 
             }
 
             div:hover {
                 width: 200px;
                 height: 200px;
-                -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+             /*<!--  -webkit-transform: rotate(180deg);  Chrome, Safari, Opera  -->*/
                 transform: rotate(180deg);
+                background-color:aqua;
+                color:#5e5ae6;
+                font-size:12px;
             }
         </style>
     </head>
     <body>
-
         <div>Passe o mouse por cima!</div>
-
+    </body>
 </html>
